@@ -12,6 +12,7 @@ public class RF_001_AccountRegistration extends BaseClass {
     @Test
     public void RF_001_AccountRegistration_Test()
     {
+        logger.info("**** Test Started ****");
         HomePage hp = new HomePage(driver);
         hp.clickMyAccount();
         hp.clickRegister();
@@ -27,6 +28,8 @@ public class RF_001_AccountRegistration extends BaseClass {
         rp.setPrivacyPolicy();
         rp.clickContinue();
         Assert.assertEquals(rp.getConfirmationMsg(),"Your Account Has Been Created!");
+        logger.info("**** Test Exited ****");
+
 
     }
 
