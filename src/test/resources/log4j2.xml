@@ -6,10 +6,12 @@
     </Properties>
 
     <Appenders>
+        <!-- Console Appender -->
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="${log-pattern}"/>
         </Console>
 
+        <!-- File Appender -->
         <RollingFile name="File" fileName="${log-path}/automation.log"
                      filePattern="${log-path}/automation-%d{MM-dd-yyyy}-%i.log.gz">
             <PatternLayout pattern="${log-pattern}"/>
@@ -22,8 +24,25 @@
     </Appenders>
 
     <Loggers>
+        <!-- Enable debug level for specific packages -->
+        <Logger name="testCases" level="DEBUG" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+
+        <Logger name="pageObjects" level="DEBUG" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+
+        <Logger name="testBase" level="DEBUG" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+
+        <!-- Root logger -->
         <Root level="INFO">
-            <!--<AppenderRef ref="Console"/>-->
+            <AppenderRef ref="Console"/>
             <AppenderRef ref="File"/>
         </Root>
     </Loggers>

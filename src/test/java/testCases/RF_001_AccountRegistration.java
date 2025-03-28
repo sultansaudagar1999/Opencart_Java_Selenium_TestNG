@@ -1,6 +1,4 @@
 package testCases;
-
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
@@ -28,13 +26,9 @@ public class RF_001_AccountRegistration extends BaseClass {
         rp.setPrivacyPolicy();
         rp.clickContinue();
         Assert.assertEquals(rp.getConfirmationMsg(),"Your Account Has Been Created!");
+
         logger.info("**** Test Exited ****");
 
 
     }
-
-
-
-
-
 }
