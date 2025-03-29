@@ -7,7 +7,7 @@ import testBase.BaseClass;
 
 public class LF_001_AccountLogin extends BaseClass {
 
-    @Test
+    @Test(groups = {"sanity","master"})
     void LF_001_AccountLogin_test(){
 
         logger.info("**** LF_001_AccountLogin_test Started ****");

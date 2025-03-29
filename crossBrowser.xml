@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="crossBrowser" thread-count="3" parallel="tests" >
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager" />
+    </listeners>
 
     <test name="ChromeTest">
         <parameter name="os" value="windows"/>

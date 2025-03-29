@@ -7,7 +7,7 @@ import testBase.BaseClass;
 
 public class RF_001_AccountRegistration extends BaseClass {
 
-    @Test
+    @Test(groups = {"regression","master"})
     public void RF_001_AccountRegistration_Test()
     {
         logger.info("**** Test Started ****");

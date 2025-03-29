@@ -1,0 +1,23 @@
+<suite name="Grouping">
+
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+    <groups>
+        <run>
+            <include name="sanity"/>
+            <!--            <include name="master">-->
+            <!--            </include>-->
+            <!--            <include name="regression">-->
+            <!--            </include>-->
+        </run>
+    </groups>
+    <test name="GroupingTest">
+        <parameter name="os" value="windows"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testCases.RF_001_AccountRegistration"/>
+            <class name="testCases.LF_001_AccountLogin"/>
+        </classes>
+    </test>
+</suite>
