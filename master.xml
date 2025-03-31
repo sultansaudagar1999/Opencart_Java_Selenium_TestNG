@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+
+<suite name="Master">
+
     <listeners>
         <listener class-name="utilities.ExtentReportManager" />
     </listeners>
@@ -8,11 +8,8 @@
         <parameter name="os" value="windows"/>
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="testCases.RF_001_AccountRegistration">
-                <methods>
-                    <include name="RF_001_AccountRegistration_Test"/>
-                </methods>
-            </class>
+            <class name="testCases.RF_001_AccountRegistration"/>
+            <class name="testCases.LF_001_AccountLogin"/>
         </classes>
     </test>
 </suite>
