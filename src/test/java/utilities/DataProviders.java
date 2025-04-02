@@ -1,5 +1,7 @@
 package utilities;
 import org.testng.annotations.DataProvider;
+
+import java.io.File;
 import java.io.IOException;
 
 public class DataProviders {
@@ -8,9 +10,10 @@ public class DataProviders {
 
     @DataProvider(name = "LoginData")
     public String[][] getData() throws IOException {
-        String path = ".\\testData\\Opencart_LoginData.xlsx";//taking xl file from testData
+        String filePath = System.getProperty("user.dir") + File.separator + "testData" + File.separator + "Opencart_LoginData.xlsx";
 
-        ExcelUtility xlutil = new ExcelUtility(path);//creating an object for XLUtility
+
+        ExcelUtility xlutil = new ExcelUtility(filePath);//creating an object for XLUtility
 
         int totalrows = xlutil.getRowCount("Sheet1");
         int totalcols = xlutil.getCellCount("Sheet1", 1);

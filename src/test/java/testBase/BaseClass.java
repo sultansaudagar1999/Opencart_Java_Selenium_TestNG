@@ -38,7 +38,9 @@ public class BaseClass {
             @Optional("chrome") String br) throws IOException
     {
         logger = LogManager.getLogger(this.getClass());
-        FileReader file = new FileReader(".\\src\\test\\resources\\config.properties");
+        String filePath = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "config.properties";
+        FileReader file = new FileReader(filePath);
+
         p=new Properties();
         p.load(file);
 

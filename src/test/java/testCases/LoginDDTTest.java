@@ -17,12 +17,12 @@ Data is invalid - login success - test fail  - logout
 */
 
 
-public class TC003_LoginDDT extends BaseClass {
+public class LoginDDTTest extends BaseClass {
 
 	@Test(dataProvider="LoginData", dataProviderClass=DataProviders.class,groups="Datadriven")// getting data provider from different class
-	public void verify_loginDDT(String email, String pwd, String exp) throws InterruptedException
+	public void verifyLoginWithDataDrivenTest(String email, String pwd, String exp) throws InterruptedException
 	{
-		logger.info("***** stating TC_003_LoginDDT ******");
+		logger.info("**** Started LoginDDTTest ****");
 		
 		try
 		{
@@ -75,7 +75,7 @@ public class TC003_LoginDDT extends BaseClass {
 			Assert.fail();
 		}
 		Thread.sleep(3000);
-		logger.info("***** Finished TC_003_LoginDDT ******");
+		logger.info("**** Exited LoginDDTTest ****");
 		
 	}
 	

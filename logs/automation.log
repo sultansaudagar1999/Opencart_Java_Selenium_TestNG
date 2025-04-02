@@ -1,16 +1,42 @@
-2025-03-31 12:46:49 INFO  RF_001_AccountRegistration:13 - **** Test Started ****
-2025-03-31 12:46:51 INFO  RF_001_AccountRegistration:30 - **** Test Exited ****
-2025-03-31 12:46:57 INFO  LF_001_AccountLogin:13 - **** LF_001_AccountLogin_test Started ****
-2025-03-31 12:46:59 INFO  LF_001_AccountLogin:24 - **** LF_001_AccountLogin_test Exited ****
-2025-03-31 12:56:06 INFO  RF_001_AccountRegistration:13 - **** Test Started ****
-2025-03-31 12:56:08 INFO  RF_001_AccountRegistration:30 - **** Test Exited ****
-2025-03-31 12:56:13 INFO  LF_001_AccountLogin:13 - **** LF_001_AccountLogin_test Started ****
-2025-03-31 12:56:15 INFO  LF_001_AccountLogin:24 - **** LF_001_AccountLogin_test Exited ****
-2025-03-31 12:58:34 INFO  RF_001_AccountRegistration:13 - **** Test Started ****
-2025-03-31 12:58:36 INFO  RF_001_AccountRegistration:30 - **** Test Exited ****
-2025-03-31 12:58:41 INFO  LF_001_AccountLogin:13 - **** LF_001_AccountLogin_test Started ****
-2025-03-31 12:58:43 INFO  LF_001_AccountLogin:24 - **** LF_001_AccountLogin_test Exited ****
-2025-03-31 13:53:57 INFO  RF_001_AccountRegistration:13 - **** Test Started ****
-2025-03-31 13:53:59 INFO  RF_001_AccountRegistration:30 - **** Test Exited ****
-2025-03-31 13:54:05 INFO  LF_001_AccountLogin:13 - **** LF_001_AccountLogin_test Started ****
-2025-03-31 13:54:08 INFO  LF_001_AccountLogin:24 - **** LF_001_AccountLogin_test Exited ****
+2025-04-02 18:30:03 INFO  RegistrationTest:13 - **** Test Started ****
+2025-04-02 18:30:06 INFO  RegistrationTest:30 - **** Test Exited ****
+2025-04-02 18:30:15 INFO  LoginTest:13 - **** LF_001_AccountLogin_test Started ****
+2025-04-02 18:30:18 INFO  LoginTest:24 - **** LF_001_AccountLogin_test Exited ****
+2025-04-02 18:35:45 INFO  RegistrationTest:13 - **** Test Started ****
+2025-04-02 18:35:49 INFO  RegistrationTest:30 - **** Test Exited ****
+2025-04-02 18:36:08 INFO  RegistrationTest:13 - **** Test Started ****
+2025-04-02 18:36:13 INFO  RegistrationTest:30 - **** Test Exited ****
+2025-04-02 18:36:51 INFO  RegistrationTest:13 - **** Test Started ****
+2025-04-02 18:36:55 INFO  RegistrationTest:30 - **** Test Exited ****
+2025-04-03 01:21:24 INFO  RegistrationTest:13 - **** Test Started ****
+2025-04-03 01:21:25 INFO  RegistrationTest:30 - **** Test Exited ****
+2025-04-03 01:21:28 INFO  LoginTest:13 - **** LF_001_AccountLogin_test Started ****
+2025-04-03 01:21:29 INFO  LoginTest:24 - **** LF_001_AccountLogin_test Exited ****
+2025-04-03 01:21:32 INFO  LogoutTest:14 - **** Logout test started ****
+2025-04-03 01:21:33 INFO  LogoutTest:25 - **** Logout test exited ****
+2025-04-03 01:21:36 INFO  SearchFunctionalityTest:13 - **** Search with existing product started ****
+2025-04-03 01:21:36 INFO  SearchFunctionalityTest:29 - **** Search with existing product exited ****
+2025-04-03 01:21:39 INFO  SearchFunctionalityTest:34 - **** Search with non-existing product started ****
+2025-04-03 01:21:49 INFO  SearchFunctionalityTest:43 - **** Search with non-existing product exited ****
+2025-04-03 01:26:01 INFO  LoginTest:13 - **** Started class testCases.LoginTest ****
+2025-04-03 01:26:02 INFO  LoginTest:24 - **** Exited class testCases.LoginTest ****
+2025-04-03 01:34:41 INFO  LoginDDTTest:25 - **** Starting LoginDDTTest ****
+2025-04-03 01:34:45 INFO  LoginDDTTest:78 - **** Exited LoginDDTTest ****
+2025-04-03 01:34:48 INFO  LoginDDTTest:25 - **** Starting LoginDDTTest ****
+2025-04-03 01:35:02 INFO  LoginDDTTest:25 - **** Starting LoginDDTTest ****
+2025-04-03 01:35:06 INFO  LoginDDTTest:78 - **** Exited LoginDDTTest ****
+2025-04-03 01:35:09 INFO  LoginDDTTest:25 - **** Starting LoginDDTTest ****
+2025-04-03 01:35:22 INFO  LoginDDTTest:78 - **** Exited LoginDDTTest ****
+2025-04-03 01:35:25 INFO  LoginDDTTest:25 - **** Starting LoginDDTTest ****
+2025-04-03 01:35:39 INFO  LoginDDTTest:25 - **** Starting LoginDDTTest ****
+2025-04-03 01:35:53 INFO  LoginDDTTest:78 - **** Exited LoginDDTTest ****
+2025-04-03 01:48:12 INFO  RegistrationTest:13 - **** Started RegistrationTest ****
+2025-04-03 01:48:14 INFO  RegistrationTest:30 - **** Exited RegistrationTest ****
+2025-04-03 01:48:16 INFO  LoginTest:13 - **** Started LoginTest ****
+2025-04-03 01:48:17 INFO  LoginTest:24 - **** Exited LoginTest ****
+2025-04-03 01:48:20 INFO  LogoutTest:14 - **** Started LogoutTest ****
+2025-04-03 01:48:21 INFO  LogoutTest:25 - **** Exited LogoutTest ****
+2025-04-03 01:48:24 INFO  SearchFunctionalityTest:13 - **** Started SearchWithExistingProductTest ****
+2025-04-03 01:48:24 INFO  SearchFunctionalityTest:29 - **** Exited SearchWithExistingProductTest ****
+2025-04-03 01:48:27 INFO  SearchFunctionalityTest:34 - **** Started SearchWithNonExistingProductTest ****
+2025-04-03 01:48:37 INFO  SearchFunctionalityTest:43 - **** Exited SearchWithNonExistingProductTest ****

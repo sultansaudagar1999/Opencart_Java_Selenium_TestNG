@@ -1,4 +1,3 @@
-
 <suite name="Master">
 
     <listeners>
@@ -8,8 +7,10 @@
         <parameter name="os" value="windows"/>
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="testCases.RF_001_AccountRegistration"/>
-            <class name="testCases.LF_001_AccountLogin"/>
+            <class name="testCases.RegistrationTest"/>
+            <class name="testCases.LoginTest"/>
+            <class name="testCases.LogoutTest"/>
+            <class name="testCases.SearchFunctionalityTest"/>
         </classes>
     </test>
 </suite>

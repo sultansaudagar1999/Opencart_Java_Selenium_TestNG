@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-
 
 <suite name="Suite" thread-count="5">
 
@@ -14,8 +11,10 @@
         <parameter name="browser" value="chrome"/>
 
         <classes>
-            <class name="testCases.RF_001_AccountRegistration"/>
-            <class name="testCases.LF_001_AccountLogin"/>
+            <class name="testCases.RegistrationTest"/>
+            <class name="testCases.LoginTest"/>
+            <class name="testCases.LogoutTest"/>
+            <class name="testCases.SearchFunctionalityTest"/>
         </classes>
     </test>
 
@@ -25,8 +24,10 @@
         <parameter name="browser" value="firefox"/>
 
         <classes>
-            <class name="testCases.RF_001_AccountRegistration"/>
-            <class name="testCases.LF_001_AccountLogin"/>
+            <class name="testCases.RegistrationTest"/>
+            <class name="testCases.LoginTest"/>
+            <class name="testCases.LogoutTest"/>
+            <class name="testCases.SearchFunctionalityTest"/>
         </classes>
     </test>
 

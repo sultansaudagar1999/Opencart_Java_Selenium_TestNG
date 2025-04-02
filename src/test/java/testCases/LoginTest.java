@@ -5,12 +5,12 @@ import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import testBase.BaseClass;
 
-public class LF_001_AccountLogin extends BaseClass {
+public class LoginTest extends BaseClass {
 
     @Test(groups = {"sanity","master"})
-    void LF_001_AccountLogin_test(){
+    void verifyUserCanLogin(){
 
-        logger.info("**** LF_001_AccountLogin_test Started ****");
+        logger.info("**** Started LoginTest ****");
         HomePage hp = new HomePage(driver);
         hp.clickMyAccount();
         hp.clickLogin();
@@ -21,10 +21,7 @@ public class LF_001_AccountLogin extends BaseClass {
         lp.clickLogin();
 
         Assert.assertTrue(lp.isMyAccountPageDisplayed());
-        logger.info("**** LF_001_AccountLogin_test Exited ****");
+        logger.info("**** Exited LoginTest ****");
 
     }
-
-
-
 }
