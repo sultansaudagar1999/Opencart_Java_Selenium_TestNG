@@ -11,7 +11,6 @@ public class LogoutTest extends BaseClass {
     @Test(groups = {"sanity","master"})
     public void verifyUserCanLogout()
     {
-        logger.info("**** Started LogoutTest ****");
         HomePage hp = new HomePage(driver);
         hp.clickMyAccount();
         hp.clickLogin();
@@ -22,7 +21,6 @@ public class LogoutTest extends BaseClass {
         lp.clickLogout();
         LogoutPage lg = new LogoutPage(driver);
         Assert.assertEquals(lg.verify_logout_message(),"Account Logout");
-        logger.info("**** Exited LogoutTest ****");
 
 
     }

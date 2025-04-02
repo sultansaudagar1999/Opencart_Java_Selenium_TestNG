@@ -10,7 +10,6 @@ public class SearchFunctionalityTest extends BaseClass {
 
     @Test(priority = 1, groups = {"sanity", "master"})
     void verifySearchWithExistingProduct() {
-        logger.info("**** Started SearchWithExistingProductTest ****");
         HomePage hp = new HomePage(driver);
         hp.enter_into_searchbox(p.getProperty("existing_product"));
         hp.click_search_button();
@@ -26,12 +25,10 @@ public class SearchFunctionalityTest extends BaseClass {
         }
 
         Assert.assertTrue(found, "The expected product was NOT found in search results!");
-        logger.info("**** Exited SearchWithExistingProductTest ****");
     }
 
     @Test(priority = 2, groups = {"sanity", "master"})
     void verifySearchWithNonExistingProduct() {
-        logger.info("**** Started SearchWithNonExistingProductTest ****");
         HomePage hp = new HomePage(driver);
         hp.enter_into_searchbox(p.getProperty("non_existing_product"));
         hp.click_search_button();
@@ -40,7 +37,5 @@ public class SearchFunctionalityTest extends BaseClass {
 
         // Search result should be empty if product does not exist
         Assert.assertTrue(searchResults.isEmpty(), "Search results are NOT empty for a non-existing product!");
-        logger.info("**** Exited SearchWithNonExistingProductTest ****");
-
     }
 }
