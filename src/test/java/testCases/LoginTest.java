@@ -5,10 +5,10 @@ import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import testBase.BaseClass;
 
-public class LF_001_AccountLogin extends BaseClass {
+public class LoginTest extends BaseClass {
 
     @Test(groups = {"sanity","master"})
-    void LF_001_AccountLogin_test(){
+    void verifyUserCanLogin(){
 
         logger.info("**** LF_001_AccountLogin_test Started ****");
         HomePage hp = new HomePage(driver);
@@ -24,7 +24,4 @@ public class LF_001_AccountLogin extends BaseClass {
         logger.info("**** LF_001_AccountLogin_test Exited ****");
 
     }
-
-
-
 }

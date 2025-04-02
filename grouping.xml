@@ -16,8 +16,8 @@
         <parameter name="os" value="windows"/>
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="testCases.RF_001_AccountRegistration"/>
-            <class name="testCases.LF_001_AccountLogin"/>
+            <class name="testCases.RegistrationTest"/>
+            <class name="testCases.LoginTest"/>
         </classes>
     </test>
 </suite>

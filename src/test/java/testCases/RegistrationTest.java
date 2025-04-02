@@ -5,10 +5,10 @@ import pageObjects.HomePage;
 import pageObjects.RegisterPage;
 import testBase.BaseClass;
 
-public class RF_001_AccountRegistration extends BaseClass {
+public class RegistrationTest extends BaseClass {
 
     @Test(groups = {"regression","master"})
-    public void RF_001_AccountRegistration_Test()
+    public void verifyUserCanRegister()
     {
         logger.info("**** Test Started ****");
         HomePage hp = new HomePage(driver);
