@@ -11,6 +11,7 @@
             <class name="testCases.LoginTest"/>
             <class name="testCases.LogoutTest"/>
             <class name="testCases.SearchFunctionalityTest"/>
+            <class name="testCases.ForgotPasswordTest"/>
         </classes>
     </test>
 </suite>

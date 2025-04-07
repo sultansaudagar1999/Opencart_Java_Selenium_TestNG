@@ -60,6 +60,7 @@ public class LoginPage extends BasePage{
     WebElement pageHeading;
 
 
+
     // ✅ Actions (Methods)
 
     public void clickContinueButton() {
@@ -159,4 +160,6 @@ public class LoginPage extends BasePage{
     public String getPageHeadingText() {
         return pageHeading.getText();
     }
+
+
 }
