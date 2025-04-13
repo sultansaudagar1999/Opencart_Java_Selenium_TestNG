@@ -5,7 +5,7 @@
     </listeners>
     <groups>
         <run>
-            <include name="sanity"/>
+            <include name="master"/>
             <!--            <include name="master">-->
             <!--            </include>-->
             <!--            <include name="regression">-->
@@ -18,6 +18,9 @@
         <classes>
             <class name="testCases.RegistrationTest"/>
             <class name="testCases.LoginTest"/>
+            <class name="testCases.LogoutTest"/>
+            <class name="testCases.SearchFunctionalityTest"/>
+            <class name="testCases.ForgotPasswordTest"/>
         </classes>
     </test>
 </suite>
