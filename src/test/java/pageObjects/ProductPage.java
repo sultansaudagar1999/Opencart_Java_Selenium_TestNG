@@ -23,6 +23,11 @@ public class ProductPage extends BasePage{
     @FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
     WebElement succesMessageAddtoCart;
 
+    @FindBy(xpath = "//button[@data-original-title=\"Add to Wish List\"]")
+    WebElement addToWishlistButton;
+
+    @FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+    WebElement succesMessageAddToWishlist;
 
     public void clickCompareButton(){
         compareButton.click();
@@ -40,6 +45,14 @@ public class ProductPage extends BasePage{
 
     public String successMessageAddtoCart(){
         return succesMessageAddtoCart.getText();
+    }
+
+    public void AddToWishlistButton(){
+        addToWishlistButton.click();
+    }
+
+    public String successMessageAddToWishlist(){
+        return succesMessageAddToWishlist.getText();
     }
 
 
