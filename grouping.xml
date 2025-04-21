@@ -22,6 +22,7 @@
             <class name="testCases.SearchFunctionalityTest"/>
             <class name="testCases.ForgotPasswordTest"/>
             <class name="testCases.AddToCartTest"/>
+            <class name="testCases.AddtoWishListTest"/>
 
         </classes>
     </test>
