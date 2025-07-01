@@ -29,6 +29,11 @@ public class ProductPage extends BasePage{
     @FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
     WebElement succesMessageAddToWishlist;
 
+    @FindBy(xpath = "//a[normalize-space()='shopping cart']")
+    WebElement shoppingCartLink;
+
+
+
     public void clickCompareButton(){
         compareButton.click();
     }
@@ -53,6 +58,10 @@ public class ProductPage extends BasePage{
 
     public String successMessageAddToWishlist(){
         return succesMessageAddToWishlist.getText();
+    }
+
+    public void clickShoppingCartLinkAfterProductAdd(){
+        shoppingCartLink.click();
     }
 
 
